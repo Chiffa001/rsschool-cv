@@ -2,9 +2,9 @@
 
 ## Contact Info:
 * Phone: 8(029) 276-79-98
-* Email: kashot.kukuskin@gmail.com
-* Discord: Anton Nakonechny (@Chiffa001)
-* Telegram: @Vatson001
+* Email: *kashot.kukuskin@gmail.com*
+* Discord: *Anton Nakonechny (@Chiffa001)*
+* Telegram: *@Vatson001*
 
 ## Summary:
   I am very interested in the field of web development and I really want to develop in this direction
