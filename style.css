@@ -1,3 +1,8 @@
+:root {
+  --profile-color: rgb(238, 238, 216);
+  --profile-color-hover-link: rgb(206, 206, 169);
+}
+
 *,
 *::before,
 *::after {
@@ -7,7 +12,8 @@
   padding: 0;
 }
 
-.main-header {
+.main-header,
+.main {
   width: 1024px;
   margin: 0 auto;
 }
@@ -20,7 +26,7 @@
   padding: 20px;
 
   font-family: "Courgette", cursive;
-  color: rgb(238, 238, 216);
+  color: var(--profile-color);
   background-color: rgb(104, 103, 103);
 }
 
@@ -36,6 +42,68 @@
 
 .profile__intro {
   font-size: 1.5rem;
+}
+
+.contact-info {
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info__list {
+  list-style: none;
+  text-align: start;
+}
+
+.contact-info__item {
+  padding: 10px 0;
+
+  position: relative;
+
+  font-size: 1.1rem;
+}
+
+.contact-info__item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 8px;
+  left: -32px;
+}
+
+.contact-info__item--telegram::before {
+  background-image: url("./img/icons/i-teleg.png");
+}
+
+.contact-info__item--phone::before {
+  background-image: url("./img/icons/i-phone.png");
+}
+
+.contact-info__item--message::before {
+  background-image: url("./img/icons/i-message.png");
+}
+
+.contact-info__item--discord::before {
+  background-image: url("./img/icons/i-discord.png");
+}
+
+.contact-info__link {
+  font: inherit;
+  color: var(--profile-color);
+  text-decoration: none;
+}
+
+.contact-info__link:hover,
+.contact-info__link:focus {
+  color: var(--profile-color-hover-link);
+  text-decoration: underline;
+}
+
+.main {
+  background-color: rgb(235, 235, 235);
 }
 
 .visually-hidden {
