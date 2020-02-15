@@ -108,7 +108,9 @@
   background-color: rgb(235, 235, 235);
 }
 
-.summary {
+.summary,
+.skills,
+.experience {
   margin-bottom: 20px;
   padding: 0 10px;
 
@@ -117,16 +119,35 @@
   border-right: none;
 }
 
-.summary__title {
+.summary__title,
+.skills__title,
+.experience__title {
   margin: 20px 0 10px 0;
 
   font-size: 1.8rem;
 }
 
-.summary__info {
+.summary__info,
+.skills__list,
+.experience__info {
   margin-bottom: 20px;
 
   font-size: 1.3rem;
+}
+
+.skills,
+.experience {
+  border-top: none;
+}
+
+.experience__link {
+  color: rgb(53, 61, 90);
+  text-decoration: none;
+}
+
+.experience__link:hover {
+  color: rgb(58, 58, 58);
+  text-decoration: underline;
 }
 
 .visually-hidden {
