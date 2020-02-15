@@ -103,7 +103,30 @@
 }
 
 .main {
+  padding: 20px;
+
   background-color: rgb(235, 235, 235);
+}
+
+.summary {
+  margin-bottom: 20px;
+  padding: 0 10px;
+
+  border: 2px dashed black;
+  border-left: none;
+  border-right: none;
+}
+
+.summary__title {
+  margin: 20px 0 10px 0;
+
+  font-size: 1.8rem;
+}
+
+.summary__info {
+  margin-bottom: 20px;
+
+  font-size: 1.3rem;
 }
 
 .visually-hidden {
