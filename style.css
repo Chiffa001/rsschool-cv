@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  padding: 20px;
+
+  font-family: "Courgette", cursive;
+  color: rgb(238, 238, 216);
+  background-color: rgb(104, 103, 103);
+}
+
+.profile__image,
+.profile__info {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.profile__title {
+  font-size: 2.5rem;
+}
+
+.profile__intro {
+  font-size: 1.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
