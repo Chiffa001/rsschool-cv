@@ -1,0 +1,167 @@
+:root {
+  --profile-color: rgb(238, 238, 216);
+  --profile-color-hover-link: rgb(206, 206, 169);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  padding: 20px;
+
+  font-family: "Courgette", cursive;
+  color: var(--profile-color);
+  background-color: rgb(104, 103, 103);
+}
+
+.profile__image,
+.profile__info {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.profile__title {
+  font-size: 2.5rem;
+}
+
+.profile__intro {
+  font-size: 1.5rem;
+}
+
+.contact-info {
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info__list {
+  list-style: none;
+  text-align: start;
+}
+
+.contact-info__item {
+  padding: 10px 0;
+
+  position: relative;
+
+  font-size: 1.1rem;
+}
+
+.contact-info__item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 8px;
+  left: -32px;
+}
+
+.contact-info__item--telegram::before {
+  background-image: url("./img/icons/i-teleg.png");
+}
+
+.contact-info__item--phone::before {
+  background-image: url("./img/icons/i-phone.png");
+}
+
+.contact-info__item--message::before {
+  background-image: url("./img/icons/i-message.png");
+}
+
+.contact-info__item--discord::before {
+  background-image: url("./img/icons/i-discord.png");
+}
+
+.contact-info__link {
+  font: inherit;
+  color: var(--profile-color);
+  text-decoration: none;
+}
+
+.contact-info__link:hover,
+.contact-info__link:focus {
+  color: var(--profile-color-hover-link);
+  text-decoration: underline;
+}
+
+.main {
+  padding: 20px;
+
+  background-color: rgb(235, 235, 235);
+}
+
+.summary,
+.skills,
+.experience,
+.education {
+  margin-bottom: 20px;
+  padding: 0 10px;
+
+  border: 2px dashed black;
+  border-left: none;
+  border-right: none;
+}
+
+.summary__title,
+.skills__title,
+.experience__title,
+.education__title {
+  margin: 20px 0 10px 0;
+
+  font-size: 1.8rem;
+}
+
+.summary__info,
+.skills__list,
+.experience__info,
+.education__list {
+  margin-bottom: 20px;
+
+  font-size: 1.3rem;
+}
+
+.skills__list,
+.education__list {
+  margin-left: 25px;
+}
+
+.skills,
+.experience,
+.education {
+  border-top: none;
+}
+
+.experience__link {
+  color: rgb(53, 61, 90);
+  text-decoration: none;
+}
+
+.experience__link:hover {
+  color: rgb(58, 58, 58);
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
