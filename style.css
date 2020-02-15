@@ -110,7 +110,8 @@
 
 .summary,
 .skills,
-.experience {
+.experience,
+.education {
   margin-bottom: 20px;
   padding: 0 10px;
 
@@ -121,7 +122,8 @@
 
 .summary__title,
 .skills__title,
-.experience__title {
+.experience__title,
+.education__title {
   margin: 20px 0 10px 0;
 
   font-size: 1.8rem;
@@ -129,14 +131,21 @@
 
 .summary__info,
 .skills__list,
-.experience__info {
+.experience__info,
+.education__list {
   margin-bottom: 20px;
 
   font-size: 1.3rem;
 }
 
+.skills__list,
+.education__list {
+  margin-left: 25px;
+}
+
 .skills,
-.experience {
+.experience,
+.education {
   border-top: none;
 }
 
